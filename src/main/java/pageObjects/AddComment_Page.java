@@ -3,12 +3,15 @@ package pageObjects;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.AssertJUnit;
 
 import java.io.IOException;
+
+import static org.testng.AssertJUnit.*;
 
 public class AddComment_Page extends BasePage {
     @FindBy(xpath = "//div[@class='btn btn--menu-nav profile-link']") WebElement kontoDropDownmenu;
@@ -66,8 +69,8 @@ public class AddComment_Page extends BasePage {
 
 
     public AddComment_Page user_clicks_on_publish_button() throws Exception {
-        // I just dont want to add fake comments on webstie
-       // waitAndClickElement(publishButton);
+
+        waitAndClickElement(publishButton);
         return new AddComment_Page();
 
     }
@@ -77,16 +80,17 @@ public class AddComment_Page extends BasePage {
         WebElement newPost1 = driver.findElement(By.xpath("//div[@class='ml-comment-box__comment-list__content']//p[contains(text(),'Bardzo fajny film! Polecam gorąco! ')]"));
         WebElement newPost2 = driver.findElement(By.xpath("//div[@class='ml-comment-box__comment-list__content']//p[contains(text(),'I like it 123!@# a movie!')]"));
 
-       if (AssertJUnit.assertEquals(comment, newPost1.toString()){
-           System.out.println("Comment 1 was added");
+        if (newPost1.isDisplayed()){
+            AssertJUnit.assertEquals(newPost1.getText(), comment);
+            System.out.println("Comment1 added and visible");
+        }else if (newPost2.isDisplayed()){
+            AssertJUnit.assertEquals(newPost2.getText(), comment);
+            System.out.println("Comment2 added and visible");
+        } else {
+            Assert.fail("Comment not added or not visible");
+        }
 
-       }if(AssertJUnit.assertEquals(comment, newPost1.toString()) {
-            System.out.println("Comment2 is added ");
-        }if else {AssertJUnit.fail("Comment is not added or is not visible");}
-        Thread.sleep(5000);
-               return new AddComment_Page();
 
-    }
 
 
 
