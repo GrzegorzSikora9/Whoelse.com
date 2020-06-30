@@ -6,16 +6,27 @@
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e41818-902e-48e4-b7b3-18a8b65f8957" name="Default Changelist" comment="WhoElse">
+    <list default="true" id="53e41818-902e-48e4-b7b3-18a8b65f8957" name="Default Changelist" comment="WhoElse assertion added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AddComment_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddComment_Page.java" afterDir="false" />
     </list>
@@ -166,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593515135291</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="WhoElse assertion added">
+      <created>1593520430097</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1593520430097</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,7 +192,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -186,7 +216,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="WhoElse" />
-    <option name="LAST_COMMIT_MESSAGE" value="WhoElse" />
+    <MESSAGE value="WhoElse assertion added" />
+    <option name="LAST_COMMIT_MESSAGE" value="WhoElse assertion added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="8" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593105355349">
@@ -225,10 +256,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593515077503" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593515151733">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593520443197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593515151733" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593520443197" />
     <state x="1920" y="21" width="1231" height="811" maximized="true" key="dock-window-1" timestamp="1593457621673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

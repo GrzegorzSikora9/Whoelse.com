@@ -1,8 +1,5 @@
 package pageObjects;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -11,20 +8,29 @@ import org.testng.AssertJUnit;
 
 import java.io.IOException;
 
-import static org.testng.AssertJUnit.*;
-
 public class AddComment_Page extends BasePage {
-    @FindBy(xpath = "//div[@class='btn btn--menu-nav profile-link']") WebElement kontoDropDownmenu;
-    @FindBy(xpath = "//button[@data-js='closeCookies']") WebElement zgadzamSie;
-    @FindBy(xpath = "/html/body/div[1]/header/section/nav[2]/ul/li/div/div[2]/div/nav/ul/li[1]/a") WebElement logowanieButton;
-    @FindBy(xpath = "//button[@type='submit'][@form='form-login']") WebElement zalogujButton;
-    @FindBy(xpath = "//button[@data-js='login-by-email']") WebElement emailButton;
-    @FindBy(xpath = "//input[@type='email'][@name='email']") WebElement emailField;
-    @FindBy(xpath = "//input[@type='password'][@name='password']") WebElement passwordField;
-    @FindBy(xpath = "//div[@class='ml-movie-boxes__shadow']") WebElement anyMoviePicture;
-    @FindBy(xpath = "//button[@data-js='btn-comments']\n") WebElement komentujButton;
-    @FindBy(xpath = " //textarea[@id='#'][@name='comment']") WebElement textArea;
-    @FindBy(xpath = "//button[@type='submit']") WebElement publishButton;
+    @FindBy(xpath = "//div[@class='btn btn--menu-nav profile-link']")
+    WebElement kontoDropDownmenu;
+    @FindBy(xpath = "//button[@data-js='closeCookies']")
+    WebElement zgadzamSie;
+    @FindBy(xpath = "/html/body/div[1]/header/section/nav[2]/ul/li/div/div[2]/div/nav/ul/li[1]/a")
+    WebElement logowanieButton;
+    @FindBy(xpath = "//button[@type='submit'][@form='form-login']")
+    WebElement zalogujButton;
+    @FindBy(xpath = "//button[@data-js='login-by-email']")
+    WebElement emailButton;
+    @FindBy(xpath = "//input[@type='email'][@name='email']")
+    WebElement emailField;
+    @FindBy(xpath = "//input[@type='password'][@name='password']")
+    WebElement passwordField;
+    @FindBy(xpath = "//div[@class='ml-movie-boxes__shadow']")
+    WebElement anyMoviePicture;
+    @FindBy(xpath = "//button[@data-js='btn-comments']\n")
+    WebElement komentujButton;
+    @FindBy(xpath = " //textarea[@id='#'][@name='comment']")
+    WebElement textArea;
+    @FindBy(xpath = "//button[@type='submit']")
+    WebElement publishButton;
 
     public AddComment_Page() throws IOException {
     }
@@ -80,24 +86,18 @@ public class AddComment_Page extends BasePage {
         WebElement newPost1 = driver.findElement(By.xpath("//div[@class='ml-comment-box__comment-list__content']//p[contains(text(),'Bardzo fajny film! Polecam gorąco! ')]"));
         WebElement newPost2 = driver.findElement(By.xpath("//div[@class='ml-comment-box__comment-list__content']//p[contains(text(),'I like it 123!@# a movie!')]"));
 
-        if (newPost1.isDisplayed()){
+        if (newPost1.isDisplayed()) {
             AssertJUnit.assertEquals(newPost1.getText(), comment);
             System.out.println("Comment1 added and visible");
-        }else if (newPost2.isDisplayed()){
+        } else if (newPost2.isDisplayed()) {
             AssertJUnit.assertEquals(newPost2.getText(), comment);
             System.out.println("Comment2 added and visible");
         } else {
             Assert.fail("Comment not added or not visible");
         }
 
+        return new AddComment_Page();
 
-
-
-
-
-
-
-
-
+    }
 
 }
