@@ -19,16 +19,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53e41818-902e-48e4-b7b3-18a8b65f8957" name="Default Changelist" comment="WhoElse assertion added">
+    <list default="true" id="53e41818-902e-48e4-b7b3-18a8b65f8957" name="Default Changelist" comment="WhoElse assertion improved">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageObjects/AddComment_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageObjects/AddComment_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/resources/features/RegisterNewUser_Website.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/resources/features/RegisterNewUser_Website.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../FirstAutomationTesting-master/FirstAutomationTesting-master/CucumberFramework" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunManager" selected="TestNG.MainRunner">
@@ -184,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593520430097</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="WhoElse assertion improved">
+      <created>1593520621513</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1593520621513</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -198,7 +204,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/master" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -217,7 +223,8 @@
     </ignored-roots>
     <MESSAGE value="WhoElse" />
     <MESSAGE value="WhoElse assertion added" />
-    <option name="LAST_COMMIT_MESSAGE" value="WhoElse assertion added" />
+    <MESSAGE value="WhoElse assertion improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="WhoElse assertion improved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="8" y="135" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593105355349">
@@ -232,6 +239,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="551" y="281" width="433" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593175233251" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1593522162842">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593522162842" />
     <state width="1493" height="320" key="GridCell.Tab.0.bottom" timestamp="1593519797738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -256,10 +267,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593515077503" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593520443197">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1593520629846">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593520443197" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.21.1680.1010@0.0.1536.824" timestamp="1593520629846" />
     <state x="1920" y="21" width="1231" height="811" maximized="true" key="dock-window-1" timestamp="1593457621673">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
